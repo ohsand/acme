@@ -22,11 +22,36 @@
         <img src="moon.png" id="moon">
         <img src="background3.png" id="backgroundthree">
         <h2 id="text">ACME</h2>
-        <a href="#" id="btn">Explore</a>
+        <a href="#main" id="btn">Explore</a>
         <img src="background2.png" id="backgroundtwo">
         <img src="background1.png" id="backgroundone">
     </section>
+    <div class="main" id="main">
+      <h2>Welcome to ACME</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum suscipit fuga obcaecati enim? Sed dolore pariatur mollitia sapiente, quibusdam commodi aspernatur delectus deserunt voluptatibus tempore! Sequi, beatae? Alias, molestiae velit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil nobis suscipit eum ut. Doloribus similique error excepturi quos reiciendis qui atque nemo doloremque animi maxime corporis repudiandae, voluptates minus id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse possimus ratione ipsam voluptate doloremque sint natus suscipit eligendi provident omnis amet laboriosam, autem tenetur rerum, totam adipisci aliquam ullam aliquid.<br> <br> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum suscipit fuga obcaecati enim? Sed dolore pariatur mollitia sapiente, quibusdam commodi aspernatur delectus deserunt voluptatibus tempore! Sequi, beatae? Alias, molestiae velit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil nobis suscipit eum ut. Doloribus similique error excepturi quos reiciendis qui atque nemo doloremque animi maxime corporis repudiandae, voluptates minus id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse possimus ratione ipsam voluptate doloremque sint natus suscipit eligendi provident omnis amet laboriosam, autem tenetur rerum, totam adipisci aliquam ullam aliquid.<br> <br> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum suscipit fuga obcaecati enim? Sed dolore pariatur mollitia sapiente, quibusdam commodi aspernatur delectus deserunt voluptatibus tempore! Sequi, beatae? Alias, molestiae velit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil nobis suscipit eum ut. Doloribus similique error excepturi quos reiciendis qui atque nemo doloremque animi maxime corporis repudiandae, voluptates minus id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse possimus ratione ipsam voluptate doloremque sint natus suscipit eligendi provident omnis amet laboriosam, autem tenetur rerum, totam adipisci aliquam ullam aliquid.</p>
+  </div>
 
-	<script src="index.js"></script>
+	<script>
+    let stars = document.getElementById("stars");
+    let moon = document.getElementById("moon");
+    let backgroundone = document.getElementById("backgroundone");
+    let backgroundtwo = document.getElementById("backgroundtwo");
+    let backgroundthree = document.getElementById("backgroundthree");
+    let text = document.getElementById("text");
+    let btn = document.getElementById("btn");
+    let header = document.querySelector('header');
+
+    window.addEventListener('scroll', function(){
+      let value = window.scrollY;
+      stars.style.left = value * 0.25 + 'px';
+      moon.style.top = value * 1.05 + 'px';
+      backgroundthree.style.top = value * 0.8 + 'px';
+      backgroundtwo.style.top = value * 0.4 + 'px';
+      backgroundone.style.top = value * 0 + 'px';
+      text.style.marginRight = value * 4 + 'px';
+      btn.style.marginTop = value * 1.5 + 'px';
+      header.style.top = value * 0.5 + 'px';
+    })
+  </script>
   </body>
 </html>
