@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Scroll website</title>
+    <title>ACME</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header>
-        <a href="#" class="logo">Logo</a>
+        <!-- <a href="#" class="logo">Logo</a> -->
+        <img src="acmelogo.png" alt="acme logo" class="logo" >
         <ul>
             <li><a href="#" class="active">Home</a></li>
             <li><a href="#">About</a></li>
@@ -18,8 +19,8 @@
         </ul>
     </header>
     <section>
-        <img src="stars.png" id="stars">
-        <img src="moon.png" id="moon">
+        <img src="starsimage.png" id="stars">
+        <img src="sun.png" id="moon">
         <img src="background3.png" id="backgroundthree">
         <h2 id="text">ACME</h2>
         <a href="#main" id="btn">Explore</a>
@@ -28,7 +29,10 @@
     </section>
     <div class="main" id="main">
       <h2>Welcome to ACME</h2>
+      <div class="description">
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum suscipit fuga obcaecati enim? Sed dolore pariatur mollitia sapiente, quibusdam commodi aspernatur delectus deserunt voluptatibus tempore! Sequi, beatae? Alias, molestiae velit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil nobis suscipit eum ut. Doloribus similique error excepturi quos reiciendis qui atque nemo doloremque animi maxime corporis repudiandae, voluptates minus id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse possimus ratione ipsam voluptate doloremque sint natus suscipit eligendi provident omnis amet laboriosam, autem tenetur rerum, totam adipisci aliquam ullam aliquid.<br> <br> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum suscipit fuga obcaecati enim? Sed dolore pariatur mollitia sapiente, quibusdam commodi aspernatur delectus deserunt voluptatibus tempore! Sequi, beatae? Alias, molestiae velit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil nobis suscipit eum ut. Doloribus similique error excepturi quos reiciendis qui atque nemo doloremque animi maxime corporis repudiandae, voluptates minus id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse possimus ratione ipsam voluptate doloremque sint natus suscipit eligendi provident omnis amet laboriosam, autem tenetur rerum, totam adipisci aliquam ullam aliquid.<br> <br> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum suscipit fuga obcaecati enim? Sed dolore pariatur mollitia sapiente, quibusdam commodi aspernatur delectus deserunt voluptatibus tempore! Sequi, beatae? Alias, molestiae velit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil nobis suscipit eum ut. Doloribus similique error excepturi quos reiciendis qui atque nemo doloremque animi maxime corporis repudiandae, voluptates minus id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse possimus ratione ipsam voluptate doloremque sint natus suscipit eligendi provident omnis amet laboriosam, autem tenetur rerum, totam adipisci aliquam ullam aliquid.</p>
+      <img src="weight.png" alt="cartoon weight with acme logo" >
+    </div>
   </div>
 
 	<script>
@@ -44,9 +48,9 @@
     window.addEventListener('scroll', function(){
       let value = window.scrollY;
       stars.style.left = value * 0.25 + 'px';
-      moon.style.top = value * 1.05 + 'px';
+      moon.style.top = value + 'px';
       backgroundthree.style.top = value * 0.8 + 'px';
-      backgroundtwo.style.top = value * 0.4 + 'px';
+      backgroundtwo.style.top = value * 0.2 + 'px';
       backgroundone.style.top = value * 0 + 'px';
       text.style.marginRight = value * 4 + 'px';
       btn.style.marginTop = value * 1.5 + 'px';
